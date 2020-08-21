@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
-//using AnimalShelterApi.Models;
+using AnimalShelterApi.Models;
 using Microsoft.AspNetCore.Mvc.ApiExplorer; //for swagger
 using Microsoft.AspNetCore.StaticFiles; // for swagger
 using System.Reflection; // for swagger
