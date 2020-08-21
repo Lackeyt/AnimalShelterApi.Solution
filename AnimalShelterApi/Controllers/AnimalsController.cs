@@ -78,7 +78,7 @@ namespace AnimalShelterApi.Controllers
 
     //DELETE api/animals/5 --delete animal by id
     [HttpDelete("{id}")]
-    public void Delete(int id, string userName)
+    public void Delete(int id)
     {
       var reviewToDelete = _db.Animals.FirstOrDefault(entry=>entry.AnimalId == id);
       _db.Animals.Remove(reviewToDelete);
