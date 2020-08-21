@@ -9,7 +9,7 @@
 
 
 ## Description
-Animal Shelter API and associated database. Object models available for Dogs and Cats vith various data fields. Swagger implementation allows for simple user interface with the API. This facilitates viewing all records, viewing single records, viewing a random record, creating new records, updating exisiting records, and deleting records. Data is stored in a SQL database.
+Animal Shelter API and associated database. Object models available for Dogs and Cats vith various data fields. Swagger implementation allows for simple user interface with the API. This facilitates viewing all records, viewing single records, viewing a random record, creating new records, updating exisiting records, and deleting records. Data is stored in a SQL database in 2 tables, separated through their controller routes in the codebase. 
 
 ## Setup/Installation Requirements
 
@@ -35,7 +35,7 @@ Animal Shelter API and associated database. Object models available for Dogs and
 ![ImportFilePath](./AnimalShelterApi/wwwroot/assets/images/readme/ImportFilePath.PNG)<br>
 4. Under 'Default Schema to be Imported To', click the "new" button.<br>
 ![SelectNew](./AnimalShelterApi/wwwroot/assets/images/readme/SelectNew.PNG)<br>
-5. Name the schema 'Travel_Api' and click "ok"<br>
+5. Name the schema 'tyson_lackey' and click "ok"<br>
 ![NameSchema](./AnimalShelterApi/wwwroot/assets/images/readme/NameSchema.PNG)<br>
 6. Click 'Start Import'<br>
 ![StartImport](./AnimalShelterApi/wwwroot/assets/images/readme/StartImport.PNG)<br>
