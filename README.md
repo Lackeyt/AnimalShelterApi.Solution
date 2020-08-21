@@ -45,21 +45,22 @@
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available API Routes:
 
-  * Animal List [Type: GET]: http://<span></span>localhost:5000/api/animals...
-    * Returns a list of animals based on parameters below
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Dogs:
+  * dog List [Type: GET]: http://<span></span>localhost:5000/api/dogs...
+    * Returns a list of dogs based on parameters below
     * Parameters:
       - Name (string [max 20 characters])
       - Type (string [max 20 characters])
       - Color (string [max 20 characters])
       - Temperament (string [max 20 characters])
 
-  * Random Animal [Type: GET]: http://<span></span>localhost:5000/api/animals/random
-    * Returns a list of animals based on parameters below
+  * Random dog [Type: GET]: http://<span></span>localhost:5000/api/dogs/random
+    * Returns a list of dogs based on parameters below
     * Parameters:
       - n/a
 
-  * Create Animal [Type: POST]: http://<span></span>localhost:5000/api/animals...
-    * Creates a new Animal records, all fields required for valid entry.
+  * Create dog [Type: POST]: http://<span></span>localhost:5000/api/dogs...
+    * Creates a new dog records, all fields required for valid entry.
     * Parameters:
       - Name (string [max 20 characters])
       - Type (string [max 20 characters])
@@ -67,18 +68,56 @@
       - Temperament (string [max 20 characters])
       - Description (string [max 250 characters])
 
-  * Animal Info [Type: GET]: http://<span></span>localhost:5000/api/animals/{id}
-    * Returns a single animal record associated to the route id
+  * dog Info [Type: GET]: http://<span></span>localhost:5000/api/dogs/{id}
+    * Returns a single dog record associated to the route id
     * Parameters:
       - id (integer) *required
 
-  * Animal Update [Type: PUT]: http://<span></span>localhost:5000/api/animals/{id}
-    * Updates a single animal record associated to the route id
+  * dog Update [Type: PUT]: http://<span></span>localhost:5000/api/dogs/{id}
+    * Updates a single dog record associated to the route id
     * Parameters:
       - id (integer) *required
 
-  * Animal Delete [Type: DELETE]: http://<span></span>localhost:5000/api/animals/{id}
-    * Deletes a single animal record associated to the route id
+  * dog Delete [Type: DELETE]: http://<span></span>localhost:5000/api/dogs/{id}
+    * Deletes a single dog record associated to the route id
+    * Parameters:
+      - id (integer) *required
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Cats:
+  * cat List [Type: GET]: http://<span></span>localhost:5000/api/cats...
+    * Returns a list of cats based on parameters below
+    * Parameters:
+      - Name (string [max 20 characters])
+      - Type (string [max 20 characters])
+      - Color (string [max 20 characters])
+      - Temperament (string [max 20 characters])
+
+  * Random cat [Type: GET]: http://<span></span>localhost:5000/api/cats/random
+    * Returns a list of cats based on parameters below
+    * Parameters:
+      - n/a
+
+  * Create cat [Type: POST]: http://<span></span>localhost:5000/api/cats...
+    * Creates a new cat records, all fields required for valid entry.
+    * Parameters:
+      - Name (string [max 20 characters])
+      - Type (string [max 20 characters])
+      - Color (string [max 20 characters])
+      - Temperament (string [max 20 characters])
+      - Description (string [max 250 characters])
+
+  * cat Info [Type: GET]: http://<span></span>localhost:5000/api/cats/{id}
+    * Returns a single cat record associated to the route id
+    * Parameters:
+      - id (integer) *required
+
+  * cat Update [Type: PUT]: http://<span></span>localhost:5000/api/cats/{id}
+    * Updates a single cat record associated to the route id
+    * Parameters:
+      - id (integer) *required
+
+  * cat Delete [Type: DELETE]: http://<span></span>localhost:5000/api/cats/{id}
+    * Deletes a single cat record associated to the route id
     * Parameters:
       - id (integer) *required
 
@@ -91,15 +130,14 @@
       ```
       Call:
         Type: GET
-        http://localhost:5000/api/animals?type=cat&color=black
+        http://localhost:5000/api/dogs?type=cat&color=black
 
       Response (JSON, format: pretty):
         {
-          "AnimalId": 5,
+          "DogId": 5,
           "Name": "Steve",
-          "Type": "cat",
           "Color: "black",
-          "Temperament: "calm"
+          "Temperament: "energetic"
           "Description": "Steve's crazy"
         }
       ```
@@ -107,13 +145,12 @@
       ```
       Call:
         Type: GET
-        http://localhost:5000/api/animals/random
+        http://localhost:5000/api/cats/random
       
       Response (JSON, format: pretty):
         {
-          "AnimalId": 3,
+          "CatId": 3,
           "Name": "King Leonidas",
-          "Type": "hedgehog",
           "Color: "grey",
           "Temperament: "crazy"
           "Description": "Leo like's to eat cat food and nibble on shoes"
@@ -123,7 +160,7 @@
       ```
       Call:
         Type: PUT
-        http://localhost:5000/api/animals/5
+        http://localhost:5000/api/dogs/5
 
       Response:
         n/a
