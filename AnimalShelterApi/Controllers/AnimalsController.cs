@@ -45,8 +45,9 @@ namespace AnimalShelterApi.Controllers
     {
       var query = _db.Animals.AsQueryable();
       Random rdn = new Random();
-      int MaxId = _db.Animals.Max(entry=>entry.AnimalId);
-      query = query.Where(entry=>entry.AnimalId == rdn.Next(MaxId));
+      int MaxId = _db.Animals.Max(entry=>entry.AnimalId) + 1;
+      int rand = rdn.Next(1, MaxId);
+      query = query.OrderBy(entry=>entry.AnimalId == rand).Where(entry=>entry.AnimalId == rand);
       return query.ToList();
     }
 
