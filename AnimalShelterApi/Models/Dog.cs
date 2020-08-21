@@ -16,7 +16,7 @@ namespace AnimalShelterApi.Models
     [StringLength(20)]
     public string Temperament {get;set;}
     [Required]
-    [StringLength(250)]
+    [StringLength(500)]
     public string Description {get;set;}
   }
 }
