@@ -9,7 +9,7 @@
 
 
 ## Description
- 
+Animal Shelter API and associated database. Object models available for Dogs and Cats vith various data fields. Swagger implementation allows for simple user interface with the API. This facilitates viewing all records, viewing single records, viewing a random record, creating new records, updating exisiting records, and deleting records. Data is stored in a SQL database.
 
 ## Setup/Installation Requirements
 
@@ -45,7 +45,7 @@
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Available API Routes:
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Dogs:
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dogs:
   * dog List [Type: GET]: http://<span></span>localhost:5000/api/dogs...
     * Returns a list of dogs based on parameters below
     * Parameters:
@@ -83,7 +83,7 @@
     * Parameters:
       - id (integer) *required
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Cats:
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cats:
   * cat List [Type: GET]: http://<span></span>localhost:5000/api/cats...
     * Returns a list of cats based on parameters below
     * Parameters:
