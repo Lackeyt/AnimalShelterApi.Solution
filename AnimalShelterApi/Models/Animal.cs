@@ -4,19 +4,22 @@ namespace AnimalShelterApi.Models
 {
   public class Animal
   {
-    public int AnimalId { get; set; }
+    public int AnimalId {get;set;}
     
     [StringLength(20)]
     [Required]
-    public string Name { get; set; }
+    public string Name {get;set;}
     [Required]
     [StringLength(20)]
-    public string Type { get; set; }
+    public string Type {get;set;}
     [Required]
     [StringLength(20)]
-    public string Color { get; set; }
+    public string Color {get;set;}
+    [Required]
+    [StringLength(20)]
+    public string Temperament {get;set;}
     [Required]
     [StringLength(250)]
-    public string Description { get; set; }
+    public string Description {get;set;}
   }
 }

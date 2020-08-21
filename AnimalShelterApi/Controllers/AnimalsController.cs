@@ -21,7 +21,7 @@ namespace AnimalShelterApi.Controllers
 
     //GET api/animals -- Get animals
     [HttpGet]
-    public ActionResult<IEnumerable<Animal>> Get(string name, string type, string color)
+    public ActionResult<IEnumerable<Animal>> Get(string name, string type, string color, string temperament)
     {
       var query = _db.Animals.AsQueryable();
       if (name != null)
@@ -35,6 +35,10 @@ namespace AnimalShelterApi.Controllers
       if (color != null)
       {
         query = query.Where(entry => entry.Color == color);
+      }
+      if (temperament != null)
+      {
+        query = query.Where(entry => entry.Temperament == temperament);
       }
       return query.ToList();
     }
