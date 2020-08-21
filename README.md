@@ -50,7 +50,8 @@
     * Parameters:
       - Name (string [max 20 characters])
       - Type (string [max 20 characters])
-      - Description (string [max 20 characters])
+      - Color (string [max 20 characters])
+      - Temperament (string [max 20 characters])
 
   * Random Animal [Type: GET]: http://<span></span>localhost:5000/api/animals/random
     * Returns a list of animals based on parameters below
@@ -62,7 +63,9 @@
     * Parameters:
       - Name (string [max 20 characters])
       - Type (string [max 20 characters])
-      - Description (string [max 20 characters])
+      - Color (string [max 20 characters])
+      - Temperament (string [max 20 characters])
+      - Description (string [max 250 characters])
 
   * Animal Info [Type: GET]: http://<span></span>localhost:5000/api/animals/{id}
     * Returns a single animal record associated to the route id
@@ -96,6 +99,7 @@
           "Name": "Steve",
           "Type": "cat",
           "Color: "black",
+          "Temperament: "calm"
           "Description": "Steve's crazy"
         }
       ```
@@ -111,6 +115,7 @@
           "Name": "King Leonidas",
           "Type": "hedgehog",
           "Color: "grey",
+          "Temperament: "crazy"
           "Description": "Leo like's to eat cat food and nibble on shoes"
         }
       ```
